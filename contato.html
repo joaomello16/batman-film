@@ -5,13 +5,119 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        *{
+        *{ 
+            margin: 0;
+             padding: 0;
+            box-sizing: border-box;
             background-color: black;
-            color: white;
+            color: aliceblue;
+            
         }
+        body{
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            row-gap: 10px;
+
+        }
+
+            h1{
+                font-family: "Kdam Thmor Pro", sans-serif;
+            }
+            h2{
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                font-size: 15px;
+                margin-bottom: 20px;
+            }
+            form{
+                display: flex;
+                flex-direction: column;
+                justify-items: center;
+                align-items: center;
+                
+                
+                row-gap: 8px;
+                width: 50%;
+                background-color: black;
+                height: 400px;
+                
+               
+            }
+            .email{
+                background-color: darkgray;
+                border: solid 2px whitesmoke; 
+                box-sizing: border-box;
+                height: 50px;
+                width: 100%;
+                font-size: 20px;
+                
+                
+            }
+            .nome{
+                background-color: darkgray;
+                border: solid 2px whitesmoke;
+                height: 50px;
+                width: 100%;
+                font-size: 20px;
+            }
+            textarea{
+                background-color: darkgray;
+                border: 2px solid whitesmoke;
+                width: 100%;
+                font-size: 25px;
+            }
+
+            button{
+                width: 20%;
+                height: 50px;
+                background-color: black;
+                border: solid 2px white;
+                margin-top: 30px;
+                transition: 0.5s;
+            }
+
+            button:hover{
+                background-color: white;
+                color: black;
+            }
+            
+            @media(max-width: 768px){
+                body{
+                    padding-bottom: 150px;
+                }
+                form{
+                    width: 70%;
+                }
+
+                h2{
+                    margin-bottom: 25px;
+                }
+
+                button{
+                    width: 30%;
+
+                }
+            }
+
+        
     </style>
 </head>
 <body>
-    contato
+    
+            <h1>Contate-nos</h1>
+            <h2>Grande visao sem otimas pessoas é irrelevante.</h2>
+    <form>
+        <input class="email" type="email" placeholder="Coloque um email valido" name="email-salvo">
+        
+        <input class="nome" type="text" placeholder="Nome completo" name="nome-salvo">
+        
+        <textarea rows="7" placeholder="Escreva sua mensagem" name="texto-"></textarea>
+        
+        <button>Enviar</button>
+    </form>
+    
+        
 </body>
 </html>
