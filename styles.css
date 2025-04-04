@@ -248,6 +248,8 @@ footer{
     .descricao{
         width: 100%;
         margin-right: 30px;
+        font-size: 14px;
+        color: whitesmoke;
     }
     .botao{
         width: 100%;
