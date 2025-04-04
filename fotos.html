@@ -6,12 +6,206 @@
     <title>Document</title>
     <style>
         *{
-            background-color: black;
+            
             color: white;
+            margin: 0;
+             padding: 0;
+            box-sizing: border-box;
         }
+        .fotos{
+            background-color: black;
+            width: 100%;
+            height: 120vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+        }
+        section{
+            width: 90%;
+            height: 100%;
+            display: flex;
+            justify-content: space-around;
+            padding-top: 50px;
+
+        }
+
+        .coluna-1{
+            width: 30%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            row-gap: 20px;
+    
+            
+        }
+        .coluna-2{
+            width: 30%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            row-gap: 20px;
+            
+        }
+        .coluna-3{
+            width: 30%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            row-gap: 20px;
+            
+        }
+        .c1{
+            width: 100%;
+            height: 25%;
+            
+            transition: .8s;
+        }
+        .c1:hover{
+            width: 106%;
+            height: 32%; 
+            
+            transition: 0.8s;
+        }
+        .c2{
+            width: 100%;
+            height: 25%;
+            
+        }
+        .c2:hover{
+            width: 106%;
+            height: 32%;
+            
+            transition: 0.8s;
+        }
+        .c3{
+            width: 100%;
+            height: 25%;
+            transition: 0.8s;
+            
+            
+        }
+        .c3:hover{
+            width: 106%;
+            height: 32%;
+            
+            
+        }
+        .c1l1{
+            background-image: url('./p-casal.png');
+            background-size: cover;
+        }
+        .c1l2{
+            background-image: url('./p-batma-e-gordon.png');
+            background-size: cover;
+            background-position: 50% 50%;
+        }
+        .c1l3{
+            background-image: url('./p-batman-2.png');
+            background-size: cover;
+        }
+        .c1l4{
+            background-image: url('./p-batman.png');
+            background-size: cover;
+            background-position: 50% 50%;
+        }
+        .c2l1{
+            background-image: url('./p-batmovel.png');
+            background-size: cover;
+        }
+        .c2l2{
+            background-image: url('./p-bonito.png');
+            background-size: cover;
+        }
+        .c2l3{
+            background-image: url('./p-confusao.png');
+            background-size: cover;
+        }
+        .c2l4{
+            background-image: url('./p-jhon-t.png');
+            background-size: cover;
+        }
+        .c3l1{
+            background-image: url('./p-robert.png');
+            background-size: cover;
+        }
+        .c3l2{
+            background-image: url('./p-mordomo.png');
+            background-size: cover;
+            background-position: 50% 50%;
+        }
+        .c3l3{
+            background-image: url('./p-mulher-gato.png');
+            background-size: cover;
+        }
+        .c3l4{
+            background-image: url('./p-vilao.png');
+            background-size: cover;
+        }
+
+        @media (max-width: 768px){
+            .fotos{
+                height: 300vh;
+            }
+            section{
+                display: grid;
+                grid-template-columns: 1fr;
+                column-gap: 50px;
+            }
+
+            .coluna-1{
+            width: 100%;
+            height: 100%;
+            
+        }
+        .coluna-2{
+            width: 100%;
+            height: 100%;
+            
+        }
+        .coluna-3{
+            width: 100%;
+            height: 100%;
+           
+        }
+        .c1l4{
+            background-image: url('./p-batman.png');
+            background-size: cover;
+            background-position: 50%;
+        }
+        }
+        
+        
     </style>
 </head>
 <body>
-    Fotos
+    <div class="fotos">
+
+
+        <section>
+            <div class="coluna-1">
+                <div class="c1 c1l1"></div>
+                <div class="c1 c1l2"></div>
+                <div class="c1 c1l3"></div>
+                <div class="c1 c1l4"></div>
+            </div>
+            <div class="coluna-2">
+                <div class="c2 c2l1"></div>
+                <div class="c2 c2l2"></div>
+                <div class="c2 c2l3"></div>
+                <div class="c2 c2l4"></div>
+
+            </div>
+            <div class="coluna-3">
+                <div class="c3 c3l1"></div>
+                <div class="c3 c3l2"></div>
+                <div class="c3 c3l3"></div>
+                <div class="c3 c3l4"></div>
+
+            </div>
+        </section>
+
+
+    </div>
 </body>
 </html>
