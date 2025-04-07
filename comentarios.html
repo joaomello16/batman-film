@@ -3,15 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Comentarios</title>
     <style>
         *{
             background-color: black;
             color: white;
         }
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 50px;
+        }
+        section{
+            background-color: black;
+            width: 100%;
+            height: 80px;
+            display: flex;
+            margin-top: 40px;
+        }
+        p{
+            margin-left: 15px;
+        }
+        img{
+            margin-left: 15px;
+        }
+        .container-coment{
+            width: 90%;
+            height: 90%;
+            display:flex ;
+            flex-direction: column;
+            row-gap: 50px;
+        }
+        hr{
+            opacity: 0.2;
+        }
+        .comentario{
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .user{
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+        }
     </style>
 </head>
 <body>
-    comentarios
+    <div class="container-coment">
+        <div class="primeiro-coment">
+            <section>
+                <img src="./usuario.png">
+                <p class="user" >Usuario</p>
+            </section>
+            <div class="coment">
+                <p class="comentario">
+                ★★★★★<br>
+                "Filme sensacional. Foi um dos melhores filmes de heróis que já assisti.
+             Robert Pattinson ficou incrível e combina muito bem com o personagem. Parabéns Matt Reeves!!
+              Um diretor que entende muito bem o personagem e os quadrinhos. É uma carta de amor aos fãs do personagem, e também da DC.
+               Pattinson é possivelmente o Bruce Wayne/Batman mais deprimente de todos, e isso é ótimo, pois combina com o caráter do personagem."
+                </p>
+            </div>
+        </div>
+        <div class="segundo-coment">
+            <hr>
+            <section>
+                <img src="./usuario.png">
+                <p class="user" >João Pedro</p>
+            </section>
+            <div class="coment">
+                <p class="comentario">
+                ★★★★☆<br>
+                "Excelente roteiro, ator principal e coadjuvantes. Pattinson manda bem, embora eu mesmo não esperasse, sombrio, rústico, refém de Alfred e Gordon como figuras paternas e morais. O filme o mostra evoluindo da vingança para a esperança, uma Mulher Gato muito determinada e um vilão de pimeira, o Charada e a expectativa de ascenção do Pinguim. Não perca! Nada cansativo. Boas recordações do Batman grande detetive furtivo dos anos 60 que aprisionava e embolava os capangas dos vilões,mas desta vez nada pop."
+                </p>
+            </div>
+        </div>
+
+        <div class="terceiro-coment">
+            <hr>
+            <section>
+                <img src="./usuario.png">
+                <p class="user" >Pedro Silva</p>
+            </section>
+            <div class="coment">
+                <p class="comentario">
+                ★★★★★<br>
+                "Meu estilo explícito de filme, super sombrio e dark do jeitinho que eu gosto, Pra mim o melhor Batman do cinema até agora, mas essa é minha opinião. Atuação do Robert foi sensacional, a DC acertou em cheio na escolha dele como Batman, e a conexão com a mulher gato foi espetacular. Espero ansiosamente por uma parte 2."
+                </p> 
+            </div>
+        </div>
+
+        <div class="qaurto-coment">
+            <hr>
+            <section>
+                <img src="./usuario.png">
+                <p class="user" >Roger Silva</p>
+            </section>
+            <div class="coment">
+                <p class="comentario">
+                ★★★☆☆<br>
+                "Confesso que fui assistir com a expectativa alta, não posso dizer que me decepcionei, pois o filme não beira a loucura assim, nem entra naquele patamar de filmes ruins, porém bem desanimador, vemos nesse filme um batman melancólico e dramático, um filme que se arrasta em mais de 2h, com cenas com muita ênfase sem sentido algum. Recomendo olhar em sua casa, quando chegar ao streaming de graça, não vale o ingresso, muito menos a pipoca."
+                 </p>
+        </div>
+
+    </div>
 </body>
 </html>
