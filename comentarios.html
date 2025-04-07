@@ -8,12 +8,20 @@
         *{
             background-color: black;
             color: white;
+            list-style: none;
+            text-decoration: none;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
         body{
             display: flex;
+            flex-direction: column;
+            justify-items: center;
             align-items: center;
-            justify-content: center;
-            margin-top: 50px;
+            
+            
+            
         }
         section{
             background-color: black;
@@ -21,6 +29,7 @@
             height: 80px;
             display: flex;
             margin-top: 40px;
+            
         }
         p{
             margin-left: 15px;
@@ -34,6 +43,8 @@
             display:flex ;
             flex-direction: column;
             row-gap: 50px;
+            margin-bottom: 50px;
+            
         }
         hr{
             opacity: 0.2;
@@ -45,9 +56,91 @@
             font-weight: bold;
             font-family: Arial, Helvetica, sans-serif;
         }
+        header{
+    background-color: black;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    justify-items: center;
+    margin-bottom: 20px;
+    margin-right: 40px;
+        }
+        .logo12{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content:center ;
+    cursor: pointer;
+    margin-right: 20px;
+        }
+        nav{
+    width: 70%;
+    }
+    ul{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+    }
+    li{
+    color: whitesmoke;
+    cursor: pointer;
+    font-size: 22px;
+    transition: .5s;
+    font-family: "Kdam Thmor Pro", sans-serif;    
+    }
+    li:hover{
+        color: red;
+    }
+
+    @media (max-width: 768px){
+        header{
+        justify-content: space-evenly;
+        margin-left: 30px;
+    }
+    nav{
+        margin-left: 10px;
+    }
+    ul{
+        justify-content: space-evenly;
+    }
+    li{
+        font-size: 15px;
+    }
+    .home{
+        display: none;
+    }
+    .logo12{
+        margin-left: 40px;
+    }
+    }
     </style>
 </head>
 <body>
+    <header>
+        <a class="logo12" href="./index.html">
+            <img class="logo" src="./logo.jpg" height="100%" onclick="">
+        </a>
+        <nav>
+            <ul>
+                <a class="home" href="./index.html" >
+                    <li>Home</li>
+                </a>
+                <a href="./contato.html" >
+                    <li>Contato</li>
+                </a>
+                <a href="./fotos.html" >
+                    <li>Fotos</li>
+                </a>
+                <a href="./comentarios.html" >
+                    <li>Comentarios</li>
+                </a>
+            </ul>
+        </nav>
+
+    </header>
     <div class="container-coment">
         <div class="primeiro-coment">
             <section>
@@ -104,7 +197,7 @@
                 "Confesso que fui assistir com a expectativa alta, não posso dizer que me decepcionei, pois o filme não beira a loucura assim, nem entra naquele patamar de filmes ruins, porém bem desanimador, vemos nesse filme um batman melancólico e dramático, um filme que se arrasta em mais de 2h, com cenas com muita ênfase sem sentido algum. Recomendo olhar em sua casa, quando chegar ao streaming de graça, não vale o ingresso, muito menos a pipoca."
                  </p>
         </div>
-
+    </div>
     </div>
 </body>
 </html>

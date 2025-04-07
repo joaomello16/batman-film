@@ -11,7 +11,17 @@
             margin: 0;
              padding: 0;
             box-sizing: border-box;
+            list-style: none;
+            text-decoration: none;
+            background-color: black;
         }
+        body{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-items: center
+        }
+        
         .fotos{
             background-color: black;
             width: 100%;
@@ -26,7 +36,7 @@
             height: 100%;
             display: flex;
             justify-content: space-around;
-            padding-top: 50px;
+            
 
         }
 
@@ -59,7 +69,6 @@
             width: 100%;
             height: 25%;
             
-            transition: .8s;
         }
         .c1:hover{
             width: 106%;
@@ -143,6 +152,47 @@
             background-size: cover;
         }
 
+        header{
+    background-color: black;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 30px;
+    
+    margin-bottom: 20px;
+        }
+        .logo12{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content:center ;
+    cursor: pointer;
+    margin-right: 13px;
+        }
+        nav{
+    width: 70%;
+    }
+    ul{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+    }
+    li{
+    color: whitesmoke;
+    cursor: pointer;
+    font-size: 22px;
+    transition: .5s;
+    font-family: "Kdam Thmor Pro", sans-serif;    
+    }
+    li:hover{
+        color: red;
+    }
+
+
+
         @media (max-width: 768px){
             .fotos{
                 height: 300vh;
@@ -173,14 +223,56 @@
             background-size: cover;
             background-position: 50%;
         }
+
+        header{
+        justify-content: space-evenly;
+        margin-left: 30px;
+    }
+    nav{
+        margin-left: 10px;
+    }
+    ul{
+        justify-content: space-evenly;
+    }
+    li{
+        font-size: 15px;
+    }
+    .home{
+        display: none;
+    }
+    .logo12{
+        margin-left: 25px;
+    }
         }
         
         
     </style>
 </head>
 <body>
-    <div class="fotos">
+    <header>
+        <a class="logo12" href="./index.html">
+            <img class="logo" src="./logo.jpg" height="100%" onclick="">
+        </a>
+        <nav>
+            <ul>
+                <a class="home" href="./index.html" >
+                    <li>Home</li>
+                </a>
+                <a href="./contato.html" >
+                    <li>Contato</li>
+                </a>
+                <a href="./fotos.html" >
+                    <li>Fotos</li>
+                </a>
+                <a href="./comentarios.html" >
+                    <li>Comentarios</li>
+                </a>
+            </ul>
+        </nav>
 
+    </header>
+    
+    <div class="fotos">
 
         <section>
             <div class="coluna-1">
