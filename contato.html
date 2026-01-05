@@ -1,123 +1,216 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato</title>
     <style>
-        *{ 
+        * {
             margin: 0;
-             padding: 0;
+            padding: 0;
             box-sizing: border-box;
             background-color: black;
             color: aliceblue;
-            
+            list-style: none;
+            text-decoration: none;
+
         }
-        body{
+
+        body {
             display: flex;
             flex-direction: column;
             height: 100vh;
             justify-content: center;
             align-items: center;
             row-gap: 10px;
+            padding-top: 70px;
 
         }
 
-            h1{
-                font-family: "Kdam Thmor Pro", sans-serif;
-            }
-            h2{
-                font-family: Georgia, 'Times New Roman', Times, serif;
-                font-size: 15px;
-                margin-bottom: 20px;
-            }
-            form{
-                display: flex;
-                flex-direction: column;
-                justify-items: center;
-                align-items: center;
-                
-                
-                row-gap: 8px;
-                width: 50%;
-                background-color: black;
-                height: 400px;
-                
-               
-            }
-            .email{
-                background-color: darkgray;
-                border: solid 2px whitesmoke; 
-                box-sizing: border-box;
-                height: 50px;
-                width: 100%;
-                font-size: 15px;
-                
-                
-            }
-            .nome{
-                background-color: darkgray;
-                border: solid 2px whitesmoke;
-                height: 50px;
-                width: 100%;
-                font-size: 15px;
-            }
-            textarea{
-                background-color: darkgray;
-                border: 2px solid whitesmoke;
-                width: 100%;
-                font-size: 17px;
+        header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 30px;
+    margin-bottom: 20px;
+    background-color: black;
+    z-index: 1000;
+
+        }
+
+        .logo12 {
+            width: 20%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            cursor: pointer;
+            margin-right: 13px;
+        }
+
+        nav {
+            width: 70%;
+        }
+
+        ul {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+
+        }
+
+        li {
+            color: whitesmoke;
+            cursor: pointer;
+            font-size: 22px;
+            transition: .5s;
+            font-family: "Kdam Thmor Pro", sans-serif;
+        }
+
+        li:hover {
+            color: red;
+        }
+
+
+        h1 {
+            font-family: "Kdam Thmor Pro", sans-serif;
+        }
+
+        h2 {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 15px;
+            margin-bottom: 20px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            justify-items: center;
+            align-items: center;
+
+
+            row-gap: 18px;
+            width: 50%;
+            background-color: black;
+            height: 400px;
+
+
+        }
+
+        .email {
+            background-color: darkgray;
+            border: solid 2px whitesmoke;
+            border-radius: 5px;
+            box-sizing: border-box;
+            height: 50px;
+            width: 100%;
+            font-size: 15px;
+            outline: none;
+            padding: 5px;
+            color: black;
+        }
+
+        .nome {
+            border-radius: 5px;
+            background-color: darkgray;
+            border: solid 2px whitesmoke;
+            height: 50px;
+            width: 100%;
+            font-size: 15px;
+            outline: none;
+            padding: 5px;
+            color: black;
+        }
+
+        textarea {
+            border-radius: 5px;
+            background-color: darkgray;
+            border: 2px solid whitesmoke;
+            width: 100%;
+            font-size: 17px;
+            outline: none;
+            padding: 5px;
+            color: black;
+        }
+
+        button {
+            border-radius: 5px;
+            width: 20%;
+            height: 50px;
+            background-color: black;
+            border: solid 2px white;
+            margin-top: 30px;
+            transition: 0.5s;
+        }
+
+        button:hover {
+            background-color: white;
+            color: black;
+        }
+
+        @media(max-width: 768px) {
+            body {
+                padding-bottom: 150px;
             }
 
-            button{
-                width: 20%;
-                height: 50px;
-                background-color: black;
-                border: solid 2px white;
-                margin-top: 30px;
-                transition: 0.5s;
+            form {
+                width: 90%;
             }
 
-            button:hover{
-                background-color: white;
-                color: black;
-            }
-            
-            @media(max-width: 768px){
-                body{
-                    padding-bottom: 150px;
-                }
-                form{
-                    width: 90%;
-                }
-
-                h2{
-                    margin-bottom: 25px;
-                }
-
-                button{
-                    width: 30%;
-
-                }
+            h2 {
+                margin-bottom: 25px;
             }
 
-        
+            button {
+                width: 30%;
+
+            }
+        }
     </style>
 </head>
+
 <body>
-    
-            <h1>Contate-nos</h1>
-            <h2>Grande visão sem ótimas pessoas é irrelevante.</h2>
+    <header>
+        <a class="logo12" href="./index.html">
+            <img class="logo" src="./publics/logo.jpg" height="100%" onclick="">
+        </a>
+        <nav>
+            <ul>
+                <a class="home" href="./index.html">
+                    <li>Home</li>
+                </a>
+                <a href="./contato.html">
+                    <li>Contato</li>
+                </a>
+                <a href="./fotos.html">
+                    <li>Fotos</li>
+                </a>
+                <a href="./comentarios.html">
+                    <li>Comentarios</li>
+                </a>
+            </ul>
+        </nav>
+
+    </header>
+
+    <h1>Contate-nos</h1>
+    <h2>Grande visão sem ótimas pessoas é irrelevante.</h2>
     <form>
-        <input class="email" type="email" placeholder="Coloque um email valido" name="email-salvo">
-        
-        <input class="nome" type="text" placeholder="Nome completo" name="nome-salvo">
-        
-        <textarea rows="7" placeholder="Escreva sua mensagem" name="texto-"></textarea>
-        
+        <input class="email" type="email" placeholder=" Coloque um email valido" name="email-salvo">
+
+        <input class="nome" type="text" placeholder=" Nome completo" name="nome-salvo">
+
+        <textarea rows="7" placeholder=" Escreva sua mensagem" name="texto-"></textarea>
+
         <button>Enviar</button>
     </form>
-    
-        
+
+
 </body>
+
 </html>

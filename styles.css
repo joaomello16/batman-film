@@ -47,7 +47,7 @@ li:hover{
 
 
 .banner{
-    background-image: url('./fundo1.jpg');
+    background-image: url('./publics/fundo1.jpg');
     background-position: 50% 50%;
     background-size: cover;
     width: 100%;
@@ -145,14 +145,14 @@ video{
 }
 
 .banner-1{
-    background-image: url('./batman4.png');
+    background-image: url('./publics/batman4.png');
     background-position: 50% 50%;
 }
 .banner-2{
-    background-image: url('./mulhergato.png');
+    background-image: url('./publics/mulhergato.png');
 }
 .banner-3{
-    background-image: url('./gordon.png');
+    background-image: url('./publics/gordon.png');
 }
 
 .card:hover{
